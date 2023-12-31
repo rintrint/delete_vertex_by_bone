@@ -13,7 +13,7 @@ import bpy
 class delete_vertex_by_bone_panel(bpy.types.Panel):
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "Rint"
+    bl_category = "rint"
     bl_label = "Reduce Faces Tool"
     
     def draw(self, context):
