@@ -3,7 +3,7 @@ bl_info = {
     "description": "no description",
     "author": "rint",
     "version": (0, 0, 2),
-    "blender": (3, 0, 0),
+    "blender": (2, 93, 18),
     "location": "View3D",
     "category": "Object",
 }
