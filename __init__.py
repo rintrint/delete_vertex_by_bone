@@ -2,7 +2,7 @@ bl_info = {
     "name": "delete_vertex_by_bone", 
     "description": "no description",
     "author": "rint",
-    "version": (0, 0, 2),
+    "version": (0, 0, 3),
     "blender": (2, 93, 18),
     "location": "View3D",
     "category": "Object",
@@ -10,7 +10,7 @@ bl_info = {
 
 import bpy
 
-class delete_vertex_by_bone_panel(bpy.types.Panel):
+class PANEL1_PT_delete_vertex_by_bone(bpy.types.Panel):
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = "rint"
@@ -124,7 +124,7 @@ class Delete_Vertex(bpy.types.Operator):
         return {'FINISHED'}
 
 classes = (
-	delete_vertex_by_bone_panel,
+	PANEL1_PT_delete_vertex_by_bone,
     Delete_Vertex
 )
 
@@ -145,3 +145,5 @@ def unregister():
 # bl_idname不能和其他插件一樣，插件同時啟用會導致衝突
 # classes名不能和其他插件一樣，插件同時啟用會導致衝突
 # Test_Panel3.bl_category和其他插件一樣就會放在一起
+
+# Warning: 'delete_vertex_by_bone_panel' does not contain '_PT_' with prefix and suffix
